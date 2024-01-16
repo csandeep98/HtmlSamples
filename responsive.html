@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep's Blog</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class = "logo" href="#">Ada<span>pt</span></a>
+            <img id = "mobile-cta" class = "mobile-menu"src="images/menu.svg" alt="open the menu">
+            <nav>
+                <img id = "mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="exit the navigation">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    
+                </ul>
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact us</a></li>
+                    <li class="go-premium"><a href="#">Go Premium</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class = "subhead">All the tech news &amp; much more</p>
+                <h1>Driving technology</h1>
+                <div class="hero-ct">
+                    <a href="#" class="primary-cta">try for free</a>
+                    <a href="#" class = "watch-video">
+                        <img src="images/watch.svg" alt="watch the video">watch the video
+                    </a>
+                </div>
+
+            </div>
+            <img src="images/illustration.svg" alt="a illustration" class="hero-img">
+        </div>
+    </section>
+    <section class="features-section">
+        <div class="container">
+            <ul class = "features-list">
+                <li>unlimited tasks</li>
+                <li>SMS task reminders</li>
+                <li>Confetti explosions on task completion</li>
+                <li>Social media announcements</li>
+                <li>Real time Collaborations</li>
+                <li>other awesome features</li>
+            </ul>
+            <img src="images/holding-phone.jpg" alt="a image of person holding phone" class="holding-p">
+        </div>   
+    </section>
+    <section class="testimonials">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="person">
+                    <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio architecto illum sequi, placeat aperiam nam? Illum obcaecati non atque nisi!</blockquote>
+                    <cite>Chandler Bing</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="person">
+                    <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio architecto illum sequi, placeat aperiam nam? Illum obcaecati non atque nisi!</blockquote>
+                    <cite>Chandler Bing</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="person">
+                    <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio architecto illum sequi, placeat aperiam nam? Illum obcaecati non atque nisi!</blockquote>
+                    <cite>Chandler Bing</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="left-contact">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id = "name" name = "name">
+                </form>
+                <form action="">
+                    <label for="email">Email</label>
+                    <input type="text" id = "email" name = "email">
+                </form>
+                <form action="">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                </form>
+                <form action="">
+                    <input type="submit" class="send-message-cta" value = "Send Message">
+                </form>
+
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d486414.9705790676!2d82.98238355746851!3d17.739127493783236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39431389e6973f%3A0x92d9c20395498468!2sVisakhapatnam%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1637806925324!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+           
+        </div>
+    </section>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+                nav = document.querySelector('nav')
+                mobileBtnExit = document.getElementById('mobile-exit');
+        mobileBtn.addEventListener('click',() => {
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click',() => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+</body>
+</html>
